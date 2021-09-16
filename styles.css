@@ -1,7 +1,14 @@
+body{
+    margin-left: 100px;
+    margin-right: 100px;
+}
 main{
     background-color: rgb(227, 251, 165);
 }
-.flexclass, .maindiv, .tekstas, .kalbos{
+.maindiv{
+    height: auto;
+}
+.flexclass, .maindiv, .tekstas, .kalbos, .susisiekite{
     display: flex;
 }
 ul{
@@ -15,7 +22,10 @@ li a{
     padding: 14px 16px;
     color: black ;
 }
-header, footer{
+li a:visited{
+    color:green;
+}  
+header, .kontaktai, .parasykite, .asmensparasykite{
     background-color:  rgb(205, 245, 99);
 }
 header{
@@ -37,37 +47,36 @@ main, header{
 .spalva{
     height: 50px;
 }
-.pirmas, .ketvirtas, .spalva, .mantras, .antras, .kalbos{
+.pirmas, .ketvirtas, .spalva, .mantras, .antras, .kalbos {
     background-color: rgb(177, 228, 44);
 }
 .pirmas, .ketvirtas{
-    width: 14.2%;
+    width: 20%;
     height: auto;
 }
  .trečias, .antras{
-    width: 37%;
+    width: 30%;
     height: auto;
 }
 .trečias{
     display: flex;
     flex-direction: column;
-    padding-left: 30px;
+    padding-left: 10px;
     padding-top: 30px;
     padding-bottom: 15px;
-    margin-bottom: 50px;
     position:relative;
     animation: mymove 5s;
 }
 .mpirmas, .mtrecias{
-    width: 14%;
+    width: 20%;
     height:60px;
 }
 .mantras{
-    width: 77%;
+    width: 63%;
     height: 60px;
 }
 .aprasymas{
-  margin-top: 100px;
+  margin-top: 30px;
   padding-left: 25%;
 }
 .tekstas{
@@ -80,27 +89,104 @@ img{
     border-radius: 50%;
 }
 h2 ,h3, p{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Times New Roman', Times;
 }
-h2, h3, p{
+h2, h3, h4, h5,p{
     margin-block-start:0;
     margin-block-end: 0;
 }
 h2{
     margin-bottom: 4pt;
+    font-size: 16pt;
 }
 h3{
     margin-bottom: 3pt;
+    font-size: 14pt;
 }
 p{
     margin-bottom: 2pt;
+    font-size: 12pt;
 }
 .kalbos{
-    height: 100px;
+    height: auto;
+}
+.kontaktai{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    height: auto;
 }
 footer{
-    height: 100px;
+    height: auto;
+    padding-left: 20px;
+    font-size: 6 pt;
+    padding-top: 20px;
+    padding-right: 50px;
+
 }
+.footerspam{
+   font-size: 4 pt; 
+}
+.parasykite.p{
+    font-size: 5pt;
+}
+.h2kontaktai{
+    margin-bottom: 0pt;
+}
+.parasykite, .asmensparasykite, .programavimas, .uzsienio{
+    width: 50%;
+}
+.parasykite{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.asmensparasykite{
+    padding-left: 20px;
+    text-align: center;
+}
+#vname, #pname, #ename, #smsname, #submit{
+    width: 100%;
+}
+#smsname{
+    height: 100pt;
+    text-rendering:auto;
+}
+#textarea{
+    width: 100%;
+    height: 100px ;
+}
+#submit{
+    padding: 14px 20px;
+    border:black;
+    border-style: solid;
+    border-width: 1pt;
+    background-color: rgb(177, 228, 44);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.kalbap, .kalbau{
+    width: 40%;
+    height: 40px;
+    border: black;
+    border-style: solid;
+    border-width: 1pt;
+    background-color: rgb(205, 245, 99);
+    margin-top: 20px;
+    border-radius: 6%;
+    padding-top: 20px ;
+    text-align: center;
+}
+.kalbap{
+    margin-left: 50%;
+    
+}
+.kalbau{
+    margin-left: 10%
+}
+.kalbos{
+    padding-bottom: 20px;
+}
+
 #div1{
     animation-timing-function: ease-in;
 }
